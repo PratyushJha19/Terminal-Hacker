@@ -9,7 +9,6 @@ public class Hacker : MonoBehaviour
     string[] Level1Passwords = {"author", "study", "shelf", "books","library"};
     string[] Level2Passwords = {"bars", "holster", "prison", "police", "arrrest"};
     string[] Level3Passwords = {"astronaut", "rocket", "spaceship", "satellite", "telescope"};
-
     //Game State
     enum Screen { MainMenu, Password, Win }; //Screen is a variable type which is declard by enum
     Screen CurrentScreen; //"CurrentScreeen" is the name of variable declared above 
@@ -57,7 +56,7 @@ public class Hacker : MonoBehaviour
         }
     }
 
-    void RunMainMenu(string input) // '.Length' is a command which shows the number of values   
+    void RunMainMenu(string input) // '.Length' is a command which shows the total number of values   
     {                             // in an aaray with which '.Length' has been declared
         if (input == "1")
         {
@@ -98,7 +97,7 @@ public class Hacker : MonoBehaviour
                 password = Level1Passwords[index];
                 break;
             case 2:
-                password = Level2Passwords[Random.Range(0, Level2Passwords.Length)];
+                password = Level1Passwords[Random.Range(0, Level1Passwords.Length)];
                 break;
             case 3:
                 password = Level3Passwords[Random.Range(0, Level3Passwords.Length)];
