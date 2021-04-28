@@ -15,7 +15,7 @@ public class Hacker : MonoBehaviour
     int level; //Here int and string are member variable which can be used at multiple places in an object 
     string password; // And we can declare more member variable like these
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         print("hello");
