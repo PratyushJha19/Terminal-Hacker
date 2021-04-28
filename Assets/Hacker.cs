@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hacker : MonoBehaviour
 {
-    //Arrays for password values
+    // he we have used Arrays for password values
     // Array is declared by "[]"
     string[] Level1Passwords = {"author", "study", "shelf", "books","library"};
     string[] Level2Passwords = {"bars", "holster", "prison", "police", "arrrest"};
