@@ -77,7 +77,7 @@ public class Hacker : MonoBehaviour
             level = 3;
             password = (Level3Passwords[0]);
             print(Level3Passwords.Length);
-            StartGame();
+            StartGame2();
         }
 
         else
@@ -97,7 +97,7 @@ public class Hacker : MonoBehaviour
                 password = Level1Passwords[index];
                 break;
             case 2:
-                password = Level1Passwords[Random.Range(0, Level1Passwords.Length)];
+                password = Level2Passwords[Random.Range(0, Level2Passwords.Length)];
                 break;
             case 3:
                 password = Level3Passwords[Random.Range(0, Level3Passwords.Length)];
